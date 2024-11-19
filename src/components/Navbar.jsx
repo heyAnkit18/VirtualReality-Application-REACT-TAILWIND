@@ -16,7 +16,7 @@ const Navbar = () => {
        
         <div className="flex items-center space-x-4">
           <img className="h-12 w-12 rounded-full shadow-lg" src={logo} alt="Logo" />
-          <span className="text-2xl font-semibold text-white tracking-tight">BeyondLens</span>
+          <span className="text-2xl font-semibold text-white tracking-tight">BeyondReality</span>
         </div>
 
         {/* Navigation Links for Larger Screens */}
@@ -33,7 +33,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Action Buttons */}
+       
         <div className="hidden lg:flex space-x-8">
           <a href="#" className="py-2 px-4 border-2 border-white text-white rounded-md hover:bg-gray-100 hover:text-gray-800 transition duration-300">
             Sign In
@@ -46,7 +46,6 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Toggle */}
         <div className="lg:hidden flex items-center">
           <button onClick={toggleNavbar} className="text-white p-2">
             {mobileDrawerOpen ? <X size={24} /> : <Menu size={24} />}
@@ -54,7 +53,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Drawer */}
+    
       {mobileDrawerOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-20 lg:hidden flex items-center justify-center">
           <div className="bg-neutral-900 w-3/4 p-6 rounded-lg">
