@@ -3,7 +3,7 @@ import video2 from "../assets/video2.mp4";
 
 const HeroSection = () => {
   return (
-    <div className="relative py-16 px-6 bg-gradient-to-b from-blue-900 to-black"> {/* Reduced padding-top */}
+    <div className="relative py-16 px-6 bg-gradient-to-b from-blue-900 to-black"> 
      
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center font-extrabold text-white leading-tight tracking-tight mb-6 animate__animated animate__fadeInUp animate__delay-1s">
         VirtualR <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">build tools</span> for developers
