@@ -11,20 +11,20 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      
-      <section id="hero">
+      <section id="hero"> 
         <HeroSection />
       </section>
-      <section id="features">
+      <section id="features"> 
         <FeatureSection />
       </section>
-      <section id="workflow">
+
+      <section id="workflow" className="pt-16"> 
         <Workflow />
       </section>
       <section id="pricing">
         <Pricing />
       </section>
-      <section id="testimonials">
+      <section id="testimonials" className="pt-16">
         <Testimonials />
       </section>
       <Footer />
@@ -33,3 +33,4 @@ const App = () => {
 };
 
 export default App;
+
