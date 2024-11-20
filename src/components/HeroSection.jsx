@@ -9,7 +9,7 @@ const HeroSection = () => {
         VirtualR <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">build tools</span> for developers
       </h1>     
       <p className="mt-6 text-lg sm:text-xl text-center text-gray-400 max-w-3xl mx-auto opacity-90 animate__animated animate__fadeIn animate__delay-1.5s">
-        Empower your creativity and bring your VR app ideas to life with our intuitive development tools. Get started today and turn your imagination into immersive reality!
+        Unleash your creativity and bring your VR app ideas to life with our intuitive tools. Start building today and make your imagination a reality.
       </p>
       <div className="flex justify-center gap-6 mt-12 animate__animated animate__fadeIn animate__delay-2s">
         <a
