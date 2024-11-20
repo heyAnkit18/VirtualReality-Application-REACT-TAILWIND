@@ -1,44 +1,32 @@
-import React from "react";
+import { testimonials } from "../constants";
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      text: "This is an amazing platform that has revolutionized my work.",
-      user: "Jane Doe",
-      company: "Tech Corp",
-      image: "/path-to-image/jane.jpg",
-    },
-    {
-      text: "VR is the future, and this project is leading the way!",
-      user: "John Smith",
-      company: "Innovate Inc.",
-      image: "/path-to-image/john.jpg",
-    },
-    {
-      text: "Incredible experience! It felt like I was truly there.",
-      user: "Alice Brown",
-      company: "Virtual Visions",
-      image: "/path-to-image/alice.jpg",
-    },
-  ];
-
   return (
-    <section className="testimonials-section">
-      <div className="container">
-        <h2 className="testimonials-title">What People Are Saying</h2>
-        <div className="testimonials-grid">
+    <section className="testimonials-section py-16 bg-black">
+      <div className="container mx-auto px-6 lg:px-12">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl text-center font-bold text-white mb-12">
+          What People Are Saying
+        </h2>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="testimonial-card">
-              <p className="testimonial-text">"{testimonial.text}"</p>
-              <div className="testimonial-user-info">
+            <div
+              key={index}
+              className="testimonial-card bg-neutral-800 text-white rounded-lg p-6 border border-neutral-700 shadow-lg hover:shadow-[0_0_15px_rgba(255,255,255,0.6)] transition duration-300"
+            >
+              <p className="text-neutral-300 text-lg leading-relaxed mb-6">
+                "{testimonial.text}"
+              </p>
+              <div className="flex items-center">
                 <img
-                  className="testimonial-user-image"
+                  className="w-12 h-12 rounded-full border border-neutral-500 mr-4"
                   src={testimonial.image}
                   alt={testimonial.user}
                 />
                 <div>
-                  <h6 className="testimonial-user-name">{testimonial.user}</h6>
-                  <span className="testimonial-user-company">{testimonial.company}</span>
+                  <h6 className="text-white font-semibold">{testimonial.user}</h6>
+                  <span className="text-neutral-400 text-sm italic">
+                    {testimonial.company}
+                  </span>
                 </div>
               </div>
             </div>
