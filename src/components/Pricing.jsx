@@ -4,7 +4,7 @@ import { pricingOptions } from "../constants";
 const Pricing = () => {
   return (
     <div className="mt-20 bg-gradient-to-b from-neutral-800 to-neutral-900 py-16">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center text-white my-8 tracking-wide">
+      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center text-white my-8 tracking-wide font-bold">
         Pricing Plans
       </h2>
       <div className="flex flex-wrap justify-center">
